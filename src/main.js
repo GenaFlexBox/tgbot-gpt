@@ -4,6 +4,10 @@ import config from 'config';
 import { ogg } from "./ogg.js";
 import { openai } from "./openai.js";
 import { code } from "telegraf/format";
+import 'dotenv/config'
+
+
+console.log(process.env.TELEGRAM_TOKEN);
 
 const bot = new Telegraf(process.env.TELEGRAM_TOKEN);
 
