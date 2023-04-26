@@ -6,9 +6,6 @@ import { openai } from "./openai.js";
 import { code } from "telegraf/format";
 import 'dotenv/config'
 
-
-console.log(process.env.TELEGRAM_TOKEN);
-
 const bot = new Telegraf(process.env.TELEGRAM_TOKEN);
 
 const INITIAL_SESSION = {
